@@ -2,13 +2,8 @@ name: CI/CD
 
 on: 
   push:
-    branchs:
-      - develop
-      - master
-  pull_request:
-    branchs:
-      - develop
-      - master
+    tags:
+      - v*
 
 jobs:
   flutter_test:
